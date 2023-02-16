@@ -55,10 +55,8 @@ class Developer(Employee):
 
 
 if __name__ == '__main__':
-    mike, nike, dike = Recruiter('Mike', 123), Developer('Nike', 245, ['python', 'java', 'css']), Developer('Dike', 342,
-                                                                                                            ['css',
-                                                                                                             'js', 'c#',
-                                                                                                             'ruby'])
+    mike, nike, dike = Recruiter('Mike', 123), Developer('Nike', 245, ['python', 'java', 'css']), Developer('Dike', 342,['css', 'js', 'c#', 'ruby'])
+    
     print(mike.work('hiring'))
     print(nike.work('coding'))
     print(dike.work('coding'))
