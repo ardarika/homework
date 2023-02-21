@@ -1,5 +1,6 @@
 import datetime
-from datetime import date,timedelta
+from datetime import date, timedelta
+
 
 class Employee:
     def __init__(self, name, salary):
@@ -7,13 +8,28 @@ class Employee:
         self.salary = salary
 
     def work(self):
-        return 'I come to the office'
+        return 'I come to the office.'
+
+    def __str__(self):
+        return f'{self.name}: {self.__class__.__name__}'
 
     def __gt__(self, other):
-        if self.salary > other.salary:
-            return f'{self.name} is a lucky guy!'
-        else:
-            return f'{self.name} is a looser!'
+        return self.salary > other.salary
+
+    def __lt__(self, other):
+        return self.salary < other.salary
+
+    def __le__(self, other):
+        return self.salary <= other.salary
+
+    def __ge__(self, other):
+        return self.salary >= other.salary
+
+    def __eq__(self, other):
+        return self.salary == other.salary
+
+    def __ne__(self, other):
+        return self.salary != other.salary
 
     def check_salary(self):
         now = datetime.datetime.now()
@@ -25,44 +41,31 @@ class Employee:
 
 
 class Recruiter(Employee):
-
-    def work(self, motyvation):
-        return f'"{super().work()} and start {motyvation}" - say {self.name}'
-
-    def __str__(self):
-        return f'{self.name}: {__class__.__name__}'
+    def work(self):
+        return f'"{super().work()[:-1]} and start hiring." - say {self.name}'
 
 
 class Developer(Employee):
-    def work(self, motyvation):
-        return f'"{super().work()} and start {motyvation}" - say {self.name}'
-
-    def __str__(self):
-        return f'{self.name}: {__class__.__name__}'
-
-    def __new__(cls, name, salary, tech_stack):
-        tech_stack = super().__new__(cls)
-        tech_stack.name = name
-        return tech_stack
-
     def __init__(self, name, salary, tech_stack):
-        self.name = name
+        super().__init__(name, salary)
         self.tech_stack = tech_stack
-        self.salary = salary
+
+    def work(self):
+        return f'"{super().work()[:-1]} and start coding." - say {self.name}'
 
     def check_stack(self):
         return f'{self.name} works with {len(self.tech_stack)} technologies'
 
 
 if __name__ == '__main__':
-    mike, nike, dike = Recruiter('Mike', 123), Developer('Nike', 245, ['python', 'java', 'css']), Developer('Dike', 342,['css', 'js', 'c#', 'ruby'])
-    
-    print(mike.work('hiring'))
-    print(nike.work('coding'))
-    print(dike.work('coding'))
+    mike, nike, dike = Recruiter('Mike', 123), Developer('Nike', 245, ['python', 'java', 'css']), \
+                       Developer('Dike', 342, ['css', 'js', 'c#', 'ruby'])
+    print(mike.work())
+    print(nike.work())
+    print(dike.work())
     print(mike, nike, dike, sep=', ')
     print(mike.check_salary(), nike.check_salary(), dike.check_salary(), sep='\n')
-    print(nike > mike, mike > dike, dike > nike)
+    print(nike > mike, mike != dike, dike < nike)
 
     print(nike.__dict__)
     print(dike.__dict__)
