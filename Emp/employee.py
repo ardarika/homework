@@ -1,5 +1,6 @@
 import datetime
 import csv
+import os
 
 from datetime import date, timedelta
 
@@ -13,21 +14,23 @@ class Employee:
         self.name = name
         self.salary = salary
         self.email = email
+        self.file_exists = os.path.isfile('emails.csv')
         self.validate()
         self.save_email()
 
     def save_email(self):
-        with open('emails.csv', 'a') as csv_file:
+        with open('emails.csv', 'a', newline='') as csv_file:
             writer = csv.DictWriter(csv_file, fieldnames=['name', 'email'])
-            writer.writeheader()
+            if not self.file_exists:
+                writer.writeheader()
             writer.writerow({"name": self.name, "email": self.email})
-        #  csv_file.write(self.email.lower().split() + '\n')
 
     def validate(self):
-        with open('emails.csv') as csv_file:
-            reader = csv.DictReader(csv_file, fieldnames=['name', 'email'])
-            if self.email.strip() in (x['email'] for x in reader):
-                raise EmailAlreadyExistsException
+        if self.file_exists:
+            with open('emails.csv') as csv_file:
+                reader = csv.DictReader(csv_file, fieldnames=['name', 'email'])
+                if self.email.strip() in (x['email'] for x in reader):
+                    raise EmailAlreadyExistsException
 
     def work(self):
         return 'I come to the office.'

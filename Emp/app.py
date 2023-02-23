@@ -31,3 +31,4 @@ if __name__ == '__main__':
             message = f"{datetime.date.today()} {datetime.datetime.now().hour}:{datetime.datetime.now().minute} {traceback.format_exc()}"
             logging.basicConfig(filename='logs.txt', encoding='utf-8', level=logging.DEBUG)
             logging.debug(message)
+        print("Script completed with errors. Check Logs")
