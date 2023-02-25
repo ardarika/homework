@@ -12,3 +12,111 @@ DEBUG:root:2023-02-23 18:36 Traceback (most recent call last):
     raise EmailAlreadyExistsException
 Emp.employee.EmailAlreadyExistsException
 
+DEBUG:root:2023-02-23 21:39 Traceback (most recent call last):
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 28, in <module>
+    main()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 11, in main
+    mike = Recruiter(name='Mike', salary=123, email='asdfgh@gnail.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 16, in __init__
+    self.validate()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 30, in validate
+    raise EmailAlreadyExistsException
+Emp.employee.EmailAlreadyExistsException
+
+DEBUG:root:2023-02-23 21:40 Traceback (most recent call last):
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 28, in <module>
+    main()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 11, in main
+    mike = Recruiter(name='Mike', salary=123, email='asdfgh@gnail.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 16, in __init__
+    self.validate()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 29, in validate
+    raise EmailAlreadyExistsException
+Emp.employee.EmailAlreadyExistsException
+
+DEBUG:root:2023-02-23 21:44 Traceback (most recent call last):
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 28, in <module>
+    main()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 11, in main
+    mike = Recruiter(name='Mike', salary=123, email='asdfgh@gnail.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 18, in __init__
+    self.validate()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 35, in validate
+    raise EmailAlreadyExistsException
+Emp.employee.EmailAlreadyExistsException
+
+DEBUG:root:2023-02-23 21:45 Traceback (most recent call last):
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 28, in <module>
+    main()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 11, in main
+    mike = Recruiter(name='Mike', salary=123, email='asdfgh@gnail.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 18, in __init__
+    self.validate()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 35, in validate
+    raise EmailAlreadyExistsException
+Emp.employee.EmailAlreadyExistsException
+
+DEBUG:root:2023-02-23 21:45 Traceback (most recent call last):
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 28, in <module>
+    main()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 11, in main
+    mike = Recruiter(name='Mike', salary=123, email='asdfgh@gnail.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 18, in __init__
+    self.validate()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 35, in validate
+    raise EmailAlreadyExistsException
+Emp.employee.EmailAlreadyExistsException
+
+DEBUG:root:2023-02-23 21:46 Traceback (most recent call last):
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 28, in <module>
+    main()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 11, in main
+    mike = Recruiter(name='Mike', salary=123, email='asdfgh@gnail.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 18, in __init__
+    self.validate()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 34, in validate
+    raise EmailAlreadyExistsException
+Emp.employee.EmailAlreadyExistsException
+
+DEBUG:root:2023-02-23 21:47 Traceback (most recent call last):
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 28, in <module>
+    main()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 11, in main
+    mike = Recruiter(name='Mike', salary=123, email='asdfgh@gnail.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 18, in __init__
+    self.validate()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 34, in validate
+    raise EmailAlreadyExistsException
+Emp.employee.EmailAlreadyExistsException
+
+DEBUG:root:2023-02-23 21:47 Traceback (most recent call last):
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 28, in <module>
+    main()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 11, in main
+    mike = Recruiter(name='Mike', salary=123, email='asdfgh@gnail.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 18, in __init__
+    self.validate()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 33, in validate
+    raise EmailAlreadyExistsException
+Emp.employee.EmailAlreadyExistsException
+
+DEBUG:root:2023-02-23 21:49 Traceback (most recent call last):
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 28, in <module>
+    main()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\app.py", line 11, in main
+    mike = Recruiter(name='Mike', salary=123, email='asdfgh@gnail.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 18, in __init__
+    self.validate()
+  File "C:\Users\ivnuk\Projects\OTHER\homework\Emp\employee.py", line 33, in validate
+    raise EmailAlreadyExistsException
+Emp.employee.EmailAlreadyExistsException
+
